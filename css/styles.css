@@ -679,9 +679,15 @@ input[type='checkbox'] {
 	#navLink:active{
 		
 		color:#f9b323;
+		padding: 0.625rem 0.75rem 0.625rem 0.75rem;
+		text-decoration: none;
+		transition: all 0.2s ease;
 	}
 	#navLink{
 		color:#00bfd8;
+		padding: 0.625rem 0.75rem 0.625rem 0.75rem;
+		text-decoration: none;
+		transition: all 0.2s ease;
 	}
 
 /* Dropdown Menu */
@@ -1818,10 +1824,16 @@ a:hover.back-to-top {
 	#navLink:hover,
 	#navLink:active{
 		color:#f9b323;
+		padding: 0.625rem 0.75rem 0.625rem 0.75rem;
+		text-decoration: none;
+		transition: all 0.2s ease;
 	}
 	#navLink{
 		
 		color:#00bfd8;
+		padding: 0.625rem 0.75rem 0.625rem 0.75rem;
+		text-decoration: none;
+		transition: all 0.2s ease;
 	}
 
 	.navbar-custom.top-nav-collapse {
