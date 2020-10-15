@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 import Footer from './Footer';
-import Extra from './extra';
 import {Nav, Navbar, NavDropdown} from "react-bootstrap";
-import { NavLink, Switch, Route, BrowserRouter as Router } from "react-router-dom";
+import {HashRouter, Link, NavLink, Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import Header from './Header';
 import Services from './Services';
 
 function App() {
   return (
-    <Router>
-    <div className="App">
+     
+  <HashRouter basename='/'>
+  <div className="App">
+  
       <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top" className="navbar-custom">
         <Navbar.Brand href="/"><img src="images/logo_new.png"/></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav id="navClass" className="ml-auto nav-item">
-            <Nav.Link id="navLink" href="/">Home</Nav.Link>
-            <Nav.Link id="navLink" href="/services">Services</Nav.Link>
+            <Link id="navLink" to="/">Home</Link>
+            <Link id="navLink" to="/services">Services</Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -28,8 +27,10 @@ function App() {
     </Switch>
       <h1>Hello World</h1>
       <Footer />
-    </div>
-    </Router>
+      </div>
+  </HashRouter>
+  
+    
   );
 }
 
